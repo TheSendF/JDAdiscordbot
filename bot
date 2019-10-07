@@ -1,0 +1,19 @@
+public class Bot extends ListenerAdapter {
+
+    public static void main(String args[]) throws Exception {
+
+        JDA j = new JDABuilder("NjI0NzAxNzExNjAwMDU4Mzg3.XYU5sA.fZJHZwvAGp9MFIdBrxc0pISnOD8").build();
+        j.addEventListener(new generalcmd());
+        j.addEventListener(new calccmd());
+        j.addEventListener(new userinfocmd());
+        j.addEventListener(new filter());
+        j.addEventListener(new filteronoff());
+        j.addEventListener(new filtermonoff());
+        j.addEventListener(new serverinfo());
+        j.addEventListener(new infocmd());
+        j.addEventListener(new jdacmd());
+        j.addEventListener(new freeranks());
+
+    }
+
+}
